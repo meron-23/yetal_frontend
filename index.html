@@ -283,8 +283,9 @@
             card.style.animationDelay = `${index * 0.1}s`;
 
             // Construct image path for the server to serve the image
-            const serverBaseUrl = 'https://gravity.et/yetal/api'; // Adjust this if your server serves images from a different route
-            const imageUrl = product.image ? `${serverBaseUrl}${product.image}` : 'https://via.placeholder.com/300x300?text=Product+Image';
+            // const serverBaseUrl = 'https://gravity.et/yetal/';
+            // const imageUrl = product.image ? `${serverBaseUrl}${product.image}` : 'https://via.placeholder.com/300x300?text=Product+Image';
+            const imageUrl = product.image; 
 
             console.log(product.date)
             // Format the date from the BigInt string
@@ -361,5 +362,4 @@
     });
 </script>
 </body>
-
 </html>
